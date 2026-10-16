@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hi-Latn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ek Birthday Surprise 💗</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="intro" role="dialog" aria-label="Opening surprise">
+ <div class="stars"></div>
+ <div class="lotus" id="introLotus"></div>
+ <div id="gift" class="giftbox" aria-hidden="true"><div class="lid"></div><div class="box"></div></div>
+ <p>Koi bahut special aapke liye ek chhota sa surprise leke wait kar raha hai…</p>
+ <button class="btn" id="openBtn">Apna Surprise Kholo 💝</button>
+</div>
+<header><nav aria-label="Main">
+ <a href="#home">Home</a><a href="#letter">Letter</a><a href="#lotus">Lotus Surprise</a><a href="#gifts">Gifts</a><a href="#kumbhira">Kumbhira Corner</a><a href="#cake">Cake</a><a href="#final">Final Surprise</a>
+</nav></header>
+<main>
+<section id="home" class="night"><div class="stars"></div>
+ <div class="lotus" id="heroLotus"></div>
+ <h1>Happy Birthday, My Dear GulabJamun! 🎂💗</h1>
+ <p class="card">Aaj ka din koi aam din nahi hai. Aaj woh din hai jab ek bahut hi special insaan is duniya mein aaya. Kuch log bas apne aap hone se hi zindagi ko roshan kar dete hain, aur aap unhi rare logon mein se ho. Main chahta hoon ki aapka birthday aapko wahi khushi, warmth aur pyaari muskaan de jo aap doosron ki zindagi mein laati ho.</p>
+ <div class="row"><button class="btn" data-go="#letter">Apna Special Letter Padho 💌</button><button class="btn" data-go="#gifts">Pehla Gift Kholo 🎁</button><button class="btn" data-go="#cake">Birthday Wish Maango ✨</button></div>
+</section>
+
+<section id="letter"><h2>Sirf Aapke Liye Likha Gaya Letter 💌</h2>
+ <article class="card paper" id="letterText" aria-live="polite"></article>
+ <div class="row"><button class="btn" id="reread">Dobara Padho 💗</button><button class="btn" id="copyLetter">Letter Copy Karo</button></div>
+ <p class="note" id="copyNote" role="status"></p>
+</section>
+
+<section id="lotus" class="night"><div class="stars"></div>
+ <h2>Kuch phool bahut sundar hote hain, par yeh wala aapke liye ek chhota sa message leke aaya hai. 🌸</h2>
+ <button class="lotusbtn" id="bigLotus" aria-label="Open the lotus"><div class="lotus big" id="lotusEl"></div></button>
+ <p class="card msg" id="lotusMsg">Jaise lotus paani ke upar khoobsurti se khilta hai, waise hi main chahta hoon ki aap zindagi ke har mausam mein khilti raho. Aapko apne safar mein khoobsurti, mushkil waqt mein himmat, aur chhoti-chhoti baaton mein khushi milti rahe. Yeh kabhi mat bhoolna ki aap kitni special ho. 💗</p>
+ <button class="btn" id="bloomAgain">Phir Se Khilao</button>
+</section>
+
+<section id="gifts"><h2>Chaar Chhote Birthday Gifts 🎁</h2>
+ <div class="grid">
+  <div class="card gift"><h3>Lotus phoolon ka bouquet 🌸</h3><button class="btn" data-open="g1">🎁 Kholo</button>
+   <div class="reveal" id="g1"><p>Us ladki ke liye ek chhota sa bouquet jiski muskaan ke liye hazaar phool bhi kam hain. Aapki zindagi khushi, sukoon aur pyaare surprises se khilti rahe.</p><button class="btn" id="collect">Apne Phool Collect Karo</button></div></div>
+  <div class="card gift"><h3>Wishes se bhara jar ✨</h3><button class="jar" data-open="g2" aria-label="Wishes ka jar kholo">🫙</button>
+   <div class="reveal" id="g2"><p id="wishOut"></p><button class="btn" id="pickWish">Ek Aur Wish Nikalo</button></div></div>
+  <div class="card gift"><h3>Aapke Sapne ka Chhota Sa Celebration 💙</h3><button class="btn" data-open="g3">📱 Kholo</button>
+   <div class="reveal" id="g3"><div class="phone">Vivo V70 FE ✨</div><p>Yaad hai woh chhota sa sapna jo aapne dekha tha? 2026 mein aapne use sach kar dikhaya aur apna naya Vivo V70 FE le liya! 🎉 Kabhi-kabhi sabse badi khushi wahi hoti hai jab hum kuch aisa paa lete hain jiski humne kabhi wish ki thi. Main umeed karta hoon ki yeh phone aapko bahut saari pyaari yaadein, sundar photos, khushi-bhari baatein aur aage ke liye aur bhi bahut saare sapne de.</p><button class="btn" id="celebrate">Apne Sapne ka Celebration Karo 🎊</button><p id="dreamOut" class="glow"></p></div></div>
+  <div class="card gift"><h3>Khushiyon ka chhota sa dabba 💝</h3><button class="btn" data-open="g4">💝 Kholo</button>
+   <div class="reveal" id="g4"><p>Agar main aapko saamaan ke alawa ek gift de sakta, toh woh yeh hota ki aap khud ko un pyaari aur achhi cheezon ke through dekh pao jo main aap mein dekhta hoon. Aap khushi, izzat, sukoon aur zindagi ki har achhi cheez ki haqdaar ho.</p><button class="btn" id="smile">Ek Aur Smile Bhejo 😊</button><p id="smileOut" class="glow"></p></div></div>
+ </div>
+</section>
+
+<section id="kumbhira" class="night"><div class="stars"></div><h2>Kumbhira 🐊 aur Uski GulabJamun 🍬</h2>
+ <ul class="card facts"><li>Official report: Aapke Kumbhira ko phir se muskurate hue pakda gaya hai, aur wajah hai uski GulabJamun. 🐊💗</li><li>Crocodile rule number one: Apni GulabJamun ka birthday kabhi mat bhoolo!</li><li>Breaking news: Ek crocodile duniya ki sabse meethi GulabJamun ko dil se Happy Birthday bol raha hai!</li><li>Warning: Zyada cuteness detect hui hai. Kumbhira normal behave nahi kar pa raha. 😂❤️</li><li>Crocodile ka bhi ek naram dil hota hai, jab uska favourite insaan paas ho.</li></ul>
+ <h3>Hearts Pakdo! 💗</h3>
+ <div class="row"><button class="btn" id="gStart">Shuru Karo</button><button class="btn" id="gPause" disabled>Ruko</button><button class="btn" id="gRestart">Phir Se Shuru</button><button class="btn" id="gFinish" disabled>Khatam Karo</button></div>
+ <p class="stat">Score: <b id="score">0</b> · Time: <b id="time">30</b>s</p>
+ <div id="arena" aria-label="Game area"><span id="croc">🐊</span></div>
+ <p class="glow" id="gMsg" role="status">Shuru Karo dabao aur hearts par tap karo!</p>
+ <h3>Aapki Favourite Cheezein 🌸🥚💙</h3>
+ <div class="grid">
+  <div class="card"><h4>Lotus Flower 🌸</h4><p>Aapki zindagi khoobsurti se khilti rahe, sabse mushkil dino ke baad bhi.</p></div>
+  <div class="card"><h4>Egg Lover 🥚🎉</h4><p>Aaj birthday ki calories chhutti par hain! Aapke favourite egg ko bhi ek chhota sa birthday celebration milna chahiye. 😂💗</p><button class="btn" id="joke">Egg joke sunao</button><p id="jokeOut" class="glow"></p></div>
+  <div class="card"><h4>Navy Blue 💙</h4><p>Us ladki ke liye jise navy blue pasand hai: aapki zindagi hamesha sundar aasmaan, shaant raaton aur un sapno se bhari rahe jo taaron se bhi zyada chamkein.</p></div>
+ </div>
+</section>
+
+<section id="cake"><h2>Birthday Cake aur Wish 🎂</h2>
+ <p id="ageNote" class="note"></p>
+ <div class="cake"><div class="candles" id="candles"></div><div class="layer l1"></div><div class="layer l2"></div></div>
+ <div class="row"><button class="btn" id="light">Candles Jalao</button><button class="btn" id="blow" disabled>Candles Bujhao</button><button class="btn" id="mode">Special 20th Birthday Mode</button></div>
+ <p class="glow" id="cakeMsg" role="status"></p>
+</section>
+
+<section id="wishes" class="night"><div class="stars"></div><h2>Birthday Wishes 💗</h2>
+ <div class="carousel"><button class="btn" id="prev" aria-label="Previous wish">‹</button><div class="card slide" id="slide" aria-live="polite"></div><button class="btn" id="next" aria-label="Next wish">›</button></div>
+ <p class="stat" id="slideNo"></p>
+</section>
+
+<section id="final" class="night"><div class="stars"></div>
+ <div class="lotus" id="finalLotus"></div>
+ <h2>Happy Birthday, My Dear GulabJamun! 🌸🎂</h2>
+ <button class="btn" id="reveal">Final Message Dikhao 💌</button>
+ <div class="card paper hidden" id="finalMsg">Saare aam dino ke beech, birthdays humein yeh celebrate karne ka mauka dete hain ki koi insaan is duniya mein hai. Aaj main aapko celebrate karta hoon: aapke sapne, aapki muskaan, aapka safar, aur woh insaan jo aap ban rahi ho.
+
+Meri kahani ka ek special hissa banne ke liye shukriya. Meri yaadon mein aapki hamesha ek khaas jagah rahegi, meri first love ke roop mein.
+
+Aapki zindagi khilte hue lotus jaisi khoobsurat ho, aapki favourite chhoti cheezon jaisi sukoon-bhari ho, aur raat ke aasmaan jaisi possibilities se bhari ho.
+
+Muskuraati raho, sapne dekhti raho, aur hamesha khud ke saath kind rehna yaad rakhna.
+
+Birthday wishes se bhare dil ke saath,
+
+Aapka Kumbhira 🐊💙</div>
+ <button class="btn" id="last">Ek Aakhri Surprise 💝</button>
+ <p class="glow" id="lastMsg" role="status"></p>
+</section>
+</main>
+<button id="top" aria-label="Scroll to top" hidden>↑</button>
+<script src="script.js"></script></body></html>
